@@ -3,10 +3,10 @@ batteryCharge = 70          // % <-- variable
 
 FULL_BATTERY = 100          // 100% - fully charged battery
 //chargePercentInMinutes = 10   // 1% ~ 10min
-chargePercentInHours = 10   // 1% ~ 10min
+chargePercentInHours = 0.167  // 1% ~ 0.167h
 
 //etWorkInMinutes        = batteryCharge * chargePercentInMinutes
-etWorkInHours        = batteryCharge / chargePercentInHours
+etWorkInHours        = batteryCharge * chargePercentInHours
 
 //display functions: 
 //alert( " Remaining time (minutes) " + etWorkInMinutes )  // plain text
