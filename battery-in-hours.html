@@ -13,9 +13,14 @@ etWorkInHours        = batteryCharge * chargePercentInHours
 alert( " Remaining time (hours) " + etWorkInHours )  // plain text
   
   //VARIANTA 2:
-  //etWorkInMinutes        = batteryCharge * chargePercentInMinutes
-  //etWorkInHours        = batteryCharge * chargePercentInMinutes / 60
+  batteryCharge = 70          // % <-- variable
 
+  FULL_BATTERY = 100          // 100% - fully charged battery
+  chargePercentInMinutes = 10   // 1% ~ 10min
+  //chargePercentInHours = 0.167  // 1% ~ 0.167h
+  //etWorkInMinutes        = batteryCharge * chargePercentInMinutes
+  etWorkInHours        = batteryCharge * chargePercentInMinutes / 60
+  alert( " Remaining time (hours) " + etWorkInHours )  // plain text
 // "Remaining time (minutes)" - Strings
 
 //HW1: CALCULATE IT IN HOURS
